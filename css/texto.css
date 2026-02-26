@@ -84,17 +84,6 @@ li {
     border-radius: 6px;
 }
 
-code {
-    background: rgb(255, 255, 255);
-    padding: 5px;
-    border-radius: 4px;
-}
-
-blockquote {
-    border-left: 5px solid #02fae2;
-    padding-left: 10px;
-    font-style: italic;
-}
 
 pre{
     margin: 10px;
