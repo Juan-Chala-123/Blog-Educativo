@@ -62,6 +62,16 @@ div {
     margin: 10px 0;
 }
 
+pre{
+    margin: 10px;
+    background:#eeeeee;
+    color:#000000;
+    padding:10px;
+    border-radius:8px;
+    overflow:auto;
+    font-family:'Space Mono',monospace;
+}
+
 h4 {
     background-color: rgb(219, 212, 202);
     border-radius: 3px;
