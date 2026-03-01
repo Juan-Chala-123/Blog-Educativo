@@ -59,9 +59,11 @@ li {
 
 main {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-top: 10px;
     flex: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 section {
@@ -125,4 +127,32 @@ blockquote {
 .hero h1 {
     font-size: 40px;
     margin-bottom: 10px;
+}
+pre{
+    margin: 10px;
+    background:#eeeeee;
+    color:#000000;
+    padding:10px;
+    border-radius:8px;
+    overflow:auto;
+    font-family:'Space Mono',monospace;
+}
+
+#editor {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    resize: none; /* evita que lo estiren */
+    box-sizing: border-box;
+}
+
+#preview {
+    width: 400px;  /* mismo ancho */
+    height: 300px; /* mismo alto */
+    border: 2px solid black;
+    padding: 10px;
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
 }

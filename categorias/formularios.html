@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Educativo - Formularios HTML</title>
+    <link rel="stylesheet" href="../css/texto.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Space+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="estructurales.html">Estructurales</a></li>
+                <li><a href="texto.html">Texto</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="../categorias/multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Etiquetas de Formularios HTML</h1>
+        <p>Aprende a crear formularios mostrando su código y resultado.</p>
+    </section>
+
+    <main class="contenedor">
+
+        <div class="card">
+            <h2>Input Text</h2>
+            <p>Campo para ingresar texto corto.</p>
+
+            <div class="ejemplo">
+                <label>Nombre</label>
+                <input type="text" placeholder="Escriba su nombre">
+            </div>
+
+            <pre>
+&lt;label&gt;Nombre&lt;/label&gt;
+&lt;input type="text" placeholder="Escriba su nombre"&gt;
+            </pre>
+        </div>
+
+        <div class="card">
+            <h2>Input Email</h2>
+
+            <div class="ejemplo">
+                <label>Email</label>
+                <input type="email" placeholder="correo@empresa.com">
+            </div>
+
+            <pre>
+&lt;label&gt;Email&lt;/label&gt;
+&lt;input type="email" placeholder="correo@empresa.com"&gt;
+            </pre>
+        </div>
+
+
+        <div class="card">
+            <h2>Password</h2>
+
+            <div class="ejemplo">
+                <label>Contraseña</label>
+                <input type="password" placeholder="********">
+            </div>
+
+            <pre>
+&lt;label&gt;Contraseña&lt;/label&gt;
+&lt;input type="password"&gt;
+            </pre>
+        </div>
+
+
+        <div class="card">
+            <h2>Number</h2>
+
+            <div class="ejemplo">
+                <label>Identificación</label>
+                <input type="number">
+            </div>
+
+            <pre>
+&lt;label&gt;Identificación&lt;/label&gt;
+&lt;input type="number"&gt;
+            </pre>
+        </div>
+
+
+        <div class="card">
+            <h2>Date</h2>
+
+            <div class="ejemplo">
+                <label>Fecha Nacimiento</label>
+                <input type="date">
+            </div>
+
+            <pre>
+&lt;label&gt;Fecha&lt;/label&gt;
+&lt;input type="date"&gt;
+            </pre>
+        </div>
+
+
+        <div class="card">
+            <h2>Radio</h2>
+
+            <div class="ejemplo">
+                <label>Sexo</label><br>
+                <input type="radio" name="sexo"> Masculino
+                <input type="radio" name="sexo"> Femenino
+            </div>
+
+            <pre>
+&lt;input type="radio" name="sexo"&gt; Masculino
+&lt;input type="radio" name="sexo"&gt; Femenino
+            </pre>
+        </div>
+
+
+        <div class="card">
+            <h2>Select</h2>
+
+            <div class="ejemplo">
+                <label>Estado Civil</label>
+                <select>
+                    <option>-Seleccione-</option>
+                    <option>Soltero</option>
+                    <option>Casado</option>
+                </select>
+            </div>
+
+            <pre>
+&lt;select&gt;
+&lt;option&gt;Soltero&lt;/option&gt;
+&lt;option&gt;Casado&lt;/option&gt;
+&lt;/select&gt;
+            </pre>
+        </div>
+
+
+        <div class="card">
+            <h2>Checkbox</h2>
+
+            <div class="ejemplo">
+                <label>Formación</label><br>
+                <input type="checkbox"> Técnico
+                <input type="checkbox"> Tecnólogo
+                <input type="checkbox"> Especialización
+            </div>
+
+            <pre>
+&lt;input type="checkbox"&gt; Técnico
+&lt;input type="checkbox"&gt; Tecnólogo
+&lt;input type="checkbox"&gt; Especialización
+            </pre>
+        </div>
+
+
+        <div class="card">
+            <h2>File</h2>
+
+            <div class="ejemplo">
+                <label>Foto</label>
+                <input type="file">
+            </div>
+
+            <pre>
+&lt;input type="file"&gt;
+            </pre>
+        </div>
+
+
+        <div class="card">
+            <h2>Textarea</h2>
+
+            <div class="ejemplo">
+                <label>Comentario</label>
+                <textarea rows="3"></textarea>
+            </div>
+
+            <pre>
+&lt;textarea rows="3"&gt;&lt;/textarea&gt;
+            </pre>
+        </div>
+
+        <div class="card">
+            <h2>Button</h2>
+
+            <div class="ejemplo">
+                <button onclick="alert('Hola 👋')">Click</button>
+            </div>
+
+            <pre>
+&lt;button&gt;Click&lt;/button&gt;, &lt;button onclick="alert('Hola 👋')">Click /button&gt;
+            </pre>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Blog Educativo HTML © 2026</p>
+    </footer>
+
+</body>
+
+</html>

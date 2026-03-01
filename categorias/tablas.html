@@ -17,9 +17,9 @@
                 <li><a href="estructurales.html">Estructurales</a></li>
                 <li><a href="texto.html">Texto</a></li>
                 <li><a href="listas.html">Listas</a></li>
-                <li><a href="">Formularios</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
                 <li><a href="tablas.html">Tablas</a></li>
-                <li><a href="">Multimedia</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
             </ul>
         </nav>
     </header>
@@ -28,39 +28,68 @@
         <h1>Etiquetas de Tablas</h1>
     </div>
 
-    <main>
+    <main style="flex-direction: column;">
         <section>
             <div class="card">
                 <h2>&lt; table &gt;</h2>
                 <p>Etiqueta contenedora que tendrá en su interior toda la tabla</p>
-                <div class="ejemplo">
-
-                </div>
             </div>
 
             <div class="card">
                 <h2>&lt; tr &gt;</h2>
                 <p>Indica una fila de la tabla</p>
-                <div class="ejemplo">
-
-                </div>
             </div>
 
             <div class="card">
                 <h2>&lt; td &gt;</h2>
                 <p>Indica una celda de la tabla</p>
-                <div class="ejemplo">
-
-                </div>
             </div>
 
             <div class="card">
                 <h2>&lt; th &gt;</h2>
                 <p>Indica una celdas de cabecera de la tabla</p>
-                <div class="ejemplo">
-
-                </div>
             </div>
+        </section>
+
+        <section>
+            <div class="ejemplo">
+                <table border="1">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Ciudad</th>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>23</td>
+                        <td>Bogotá</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>30</td>
+                        <td>Medellín</td>
+                    </tr>
+                </table>
+            </div>
+            <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nombre&lt;/th&gt;
+    &lt;th&gt;Edad&lt;/th&gt;
+    &lt;th&gt;Ciudad&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ana&lt;/td&gt;
+    &lt;td&gt;23&lt;/td&gt;
+    &lt;td&gt;Bogotá&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Carlos&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+    &lt;td&gt;Medellín&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
         </section>
     </main>
 

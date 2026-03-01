@@ -19,7 +19,7 @@
                 <li><a href="./categorias/texto.html">Texto</a></li>
                 <li><a href="">Formularios</a></li>
                 <li><a href="./categorias/tablas.html">Tablas</a></li>
-                <li><a href="">Multimedia</a></li>
+                <li><a href="./categorias/multimedia.html">Multimedia</a></li>
             </ul>
         </nav>
     </header>
@@ -27,6 +27,23 @@
     <div class="titulo">
         <h1 class="">Etiquetas HTML</h1>
     </div>
+
+    <main class="prueba" style="gap: 20px;">
+        <!-- <h2>Escribe código HTML aquí:</h2> -->
+        <textarea id="editor"></textarea>
+
+        <!-- <h2>Vista previa:</h2> -->
+        <div id="preview"></div>
+
+        <script>
+            const editor = document.getElementById("editor");
+            const preview = document.getElementById("preview");
+
+            editor.addEventListener("input", function() {
+                preview.innerHTML = editor.value;
+            });
+        </script>
+    </main>
     
     <footer>
         <p>© 2026 Blog Educativo. Todos los derechos reservados.</p>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Educativo - Multimedia</title>
+
+    <link rel="stylesheet" href="../css/multimedia.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Space+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="estructurales.html">Estructurales</a></li>
+                <li><a href="..*/categorias/texto.html">Texto</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="../categorias/formularios.html">Formularios</a></li>
+                <li><a href="../categorias/tablas.html">Tablas</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Etiquetas Multimedia HTML</h1>
+        <p>Aprende a insertar imágenes, audio y video en HTML.</p>
+    </section>
+
+    <main class="contenedor">
+
+        <!-- IMG -->
+        <div class="card">
+            <h2>&lt;img&gt;</h2>
+            <p>Permite insertar imágenes.</p>
+
+            <div class="ejemplo">
+                <img src="https://picsum.photos/300/180">
+            </div>
+
+            <pre>
+&lt;img src="imagen.jpg" alt="imagen"&gt;
+            </pre>
+        </div>
+
+        <!-- AUDIO -->
+        <div class="card">
+            <h2>&lt;audio&gt;</h2>
+            <p>Reproduce archivos de audio.</p>
+
+            <div class="ejemplo">
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <pre>
+&lt;audio controls&gt;
+&lt;source src="audio.mp3"&gt;
+&lt;/audio&gt;
+            </pre>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="card">
+            <h2>&lt;video&gt;</h2>
+            <p>Permite mostrar videos.</p>
+
+            <div class="ejemplo">
+                <video width="300" controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <pre>
+&lt;video controls&gt;
+&lt;source src="video.mp4"&gt;
+&lt;/video&gt;
+            </pre>
+        </div>
+
+        <!-- IFRAME -->
+        <div class="card">
+            <h2>&lt;iframe&gt;</h2>
+            <p>Inserta contenido externo.</p>
+
+            <div class="ejemplo">
+                <iframe width="300" height="180"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+            </div>
+
+            <pre>
+&lt;iframe src="URL"&gt;&lt;/iframe&gt;
+            </pre>
+        </div>
+
+        <!-- FIGURE -->
+        <div class="card">
+            <h2>&lt;figure&gt;</h2>
+            <p>Agrupa contenido multimedia.</p>
+
+            <div class="ejemplo">
+                <figure>
+                    <img src="https://picsum.photos/250/150">
+                </figure>
+            </div>
+
+            <pre>
+&lt;figure&gt;
+&lt;img src="img.jpg"&gt;
+&lt;/figure&gt;
+</pre>
+        </div>
+
+        <!-- FIGCAPTION -->
+        <div class="card">
+            <h2>&lt;figcaption&gt;</h2>
+            <p>Describe un elemento multimedia.</p>
+
+            <div class="ejemplo">
+                <figure>
+                    <img src="https://picsum.photos/250/150">
+                    <figcaption>Imagen de ejemplo</figcaption>
+                </figure>
+            </div>
+
+            <pre>
+&lt;figcaption&gt;
+Descripción
+&lt;/figcaption&gt;
+            </pre>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Blog Educativo HTML © 2026</p>
+    </footer>
+
+</body>
+
+</html>
