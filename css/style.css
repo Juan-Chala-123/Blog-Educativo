@@ -1,29 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
-    margin: 0;
 }
 
 body {
     font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
     width: 100%;
-    box-sizing: border-box;
     background-color: rgb(255, 255, 255);
-    flex-direction: column;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     width: 100%;
-    height: auto;
 }
 
 nav {
@@ -31,13 +27,7 @@ nav {
     height: auto;
     display: flex;
     justify-content: center;
-    background-color: #02fae2;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+    background: linear-gradient(135deg, #3FE6D5, #0b9fe3);
 }
 
 ul {
@@ -51,28 +41,44 @@ li {
     margin: 20px;
 }
 
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
 .titulo {
     font-size: larger;
     display: flex;
     justify-content: center;
+    text-align: center;
+    padding: 10px;
 }
 
 main {
     display: flex;
-    /* flex-direction: column; */
-    margin-top: 10px;
     flex: 1;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 section {
     display: grid;
-    /* align-items: center; */
     margin: auto;
-    width: 90%;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 25px;;
+    width: 95%;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 div {
@@ -82,14 +88,13 @@ div {
 footer {
     text-align: center;
     padding: 20px;
-    background: #02fae2;
-    bottom: 0;
+    background: linear-gradient(135deg, #3FE6D5, #0b9fe3);
+    margin-top: auto;
 }
 
 .card {
     background: white;
     padding: 20px;
-    margin: 0;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
@@ -107,56 +112,93 @@ footer {
 }
 
 code {
-    background: rgb(255, 255, 255);
-    color: #02fae2;
+    background: linear-gradient(135deg, #3FE6D5, #0b9fe3);
     padding: 5px;
     border-radius: 4px;
+    color: black;
 }
 
 blockquote {
-    border-left: 5px solid #02fae2;
+    border-left: 5px solid #16509a;
     padding-left: 10px;
     font-style: italic;
 }
 
 .hero {
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 20px;
 }
 
 .hero h1 {
     font-size: 40px;
     margin-bottom: 10px;
 }
-pre{
-    margin: 10px;
-    background:#eeeeee;
-    color:#000000;
-    padding:10px;
-    border-radius:8px;
-    overflow:auto;
-    font-family:'Space Mono',monospace;
-}
 
-#editor {
-    width: 400px;
-    height: 300px;
-    padding: 10px;
-    border-radius: 8px;
-    resize: none; /* evita que lo estiren */
-    box-sizing: border-box;
-    border: 2px solid black;
-    margin-top: -60px;
-}
-
-#preview {
-    width: 400px;  /* mismo ancho */
-    height: 300px; /* mismo alto */
-    border: 2px solid black;
+pre {
+    margin: 10px 0;
+    background: #eeeeee;
+    color: #000000;
     padding: 10px;
     border-radius: 8px;
     overflow: auto;
+    font-family: 'Space Mono', monospace;
+}
+
+#editor,
+#preview {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 8px;
     box-sizing: border-box;
+    margin-top: 0;
+}
+
+#editor {
+    resize: none;
+    border: 2px solid black;
+}
+
+#preview {
+    border: 2px solid black;
+    overflow: auto;
     background-color: #f5f5f5;
-    margin-top: -60px;
+}
+
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        overflow-x: visible;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px 7px;
+        gap: 1px;
+    }
+
+    .navbar a {
+        font-size: 15px;
+        padding: 1px 5px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    #editor,
+    #preview {
+        height: 250px;
+    }
 }
