@@ -80,6 +80,9 @@ li {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
+    max-width: 95%;
+    overflow-x: auto;
+    word-break: break-word;
 }
 
 .card:hover {
@@ -91,6 +94,9 @@ li {
     padding: 15px;
     margin-top: 10px;
     border-radius: 6px;
+    overflow-x: auto;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .ejemplo img,
@@ -106,8 +112,11 @@ pre {
     color: #000000;
     padding: 10px;
     border-radius: 8px;
-    overflow: auto;
+    overflow-x: auto;
     font-family: 'Space Mono', monospace;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 0.95em;
 }
 
 footer {
@@ -118,7 +127,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-
     nav {
         overflow-x: visible;
     }
@@ -145,5 +153,17 @@ footer {
 
     .contenedor {
         grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .card {
+        padding: 8px;
+        font-size: 0.98em;
+    }
+
+    pre, .ejemplo {
+        font-size: 0.9em;
+        padding: 6px;
+        max-width: 100vw;
     }
 }
