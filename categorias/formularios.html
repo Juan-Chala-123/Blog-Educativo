@@ -219,6 +219,7 @@
 
     </main>
 
+<<<<<<< HEAD
     <div class="form">
         <div class="formulario">
             <form action="">
@@ -279,10 +280,67 @@
             </form>
         </div>
     </div>
+=======
+        <div class="form">
+            <form id="formulario">
+                <h2>Formulario de Ejemplo</h2>
+                <div class="grupo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+                <div class="grupo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="grupo">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="********" required>
+                </div>
+                <div class="grupo">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" min="1" max="120" required>
+                </div>
+                <div class="grupo">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="grupo">
+                    <label>Sexo</label>
+                    <div class="opciones">
+                        <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="sexo" value="Femenino">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                </div>
+                <div class="grupo">
+                    <label>Lenguajes de programación</label>
+                    <div class="opciones">
+                        <input type="checkbox" id="csharp" name="lenguajes" value="C#">
+                        <label for="csharp">C#</label>
+                        <input type="checkbox" id="java" name="lenguajes" value="Java">
+                        <label for="java">Java</label>
+                        <input type="checkbox" id="js" name="lenguajes" value="JavaScript">
+                        <label for="js">JavaScript</label>
+                    </div>
+                </div>
+                <div class="grupo">
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" name="comentario" rows="3" placeholder="Escribe tu comentario"></textarea>
+                </div>
+                <div class="grupo">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+            <div id="resultado" style="display:none;"></div>
+        </div>
+>>>>>>> formulario
 
     <footer>
         <p>Blog Educativo HTML © 2026</p>
     </footer>
+
+    <script src="../js/formulario.js"></script>
 
 </body>
 
