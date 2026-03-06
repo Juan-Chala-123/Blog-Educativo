@@ -119,6 +119,42 @@ footer {
     background: linear-gradient(135deg, #3FE6D5, #0b9fe3);
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    margin-top: 40px;
+    border: #3FE6D5 solid 1px;
+    border-radius: 10px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario div {
+    display: flex;
+    margin-bottom: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formulario label {
+    font-size: 20px;
+}
+
+.formulario input[type= "text" ], .formulario input[type="number"] {
+    border-radius: 8px;
+    border: #262424 solid 1px;
+    width: 300px;
+    height: 30px;
+}
+
 @media (max-width: 600px) {
     nav {
         overflow-x: visible;
@@ -158,5 +194,20 @@ footer {
         font-size: 0.9em;
         padding: 6px;
         max-width: 100vw;
+    }
+
+    .form, .formulario {
+        width: 98%;
+        padding: 10px;
+    }
+
+    .formulario label, .formulario input, .formulario select {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .formulario {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
